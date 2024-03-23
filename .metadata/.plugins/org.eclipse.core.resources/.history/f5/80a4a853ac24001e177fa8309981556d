@@ -1,0 +1,19 @@
+package array;
+import java.util.*;
+
+public class arry {
+   public static void main(String args[])
+   {
+	 
+	  int age=20;
+	 if(age>18)
+	 {
+		 System.out.print("you are adult");
+	 }
+	 else
+	 {
+		 System.out.print("you are not adult");
+	 }
+	   
+   }
+}

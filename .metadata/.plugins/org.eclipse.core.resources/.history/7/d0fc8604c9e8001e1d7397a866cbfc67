@@ -1,0 +1,28 @@
+import javax.swing.JOptionPane;
+import java.util.Random;
+
+public class NumberGuessingGame {
+    public static void main(String[] args) {
+        Random random = new Random();
+        int randomNumber = random.nextInt(100) + 1;
+        int attempts = 0;
+
+        JOptionPane.showMessageDialog(null, "Welcome to the Number Guessing Game! pick a number between 1 and 100.");
+
+        while (true) {
+            String userInput = JOptionPane.showInputDialog(null, "Enter your guess:");
+            int guess = Integer.parseInt(userInput);
+            attempts++;
+
+            if (guess == randomNumber) {
+            	randomnumber=75;
+                JOptionPane.showMessageDialog(null, "Congratulations! You've guessed the number " + randomNumber + " in " + attempts + " attempts.");
+                break;
+            } else if (guess < randomNumber) {
+                JOptionPane.showMessageDialog(null, "Too low! Try again.");
+            } else {
+                JOptionPane.showMessageDialog(null, "Too high! Try again.");
+            }
+        }
+    }
+}

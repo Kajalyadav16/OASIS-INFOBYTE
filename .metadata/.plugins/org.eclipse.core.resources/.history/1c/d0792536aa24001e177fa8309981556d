@@ -1,0 +1,10 @@
+package array;
+
+public class arry {
+   public static void main(String args[])
+   {
+	   int a=20,b=25;
+	   int c;
+	   System.out.println("Result="+c);
+   }
+}
